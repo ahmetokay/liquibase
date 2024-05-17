@@ -1,7 +1,5 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.2.5'
-	id 'io.spring.dependency-management' version '1.1.4'
 }
 
 group = 'com.okay'
@@ -21,8 +19,4 @@ dependencies {
 	implementation group: 'org.liquibase', name: 'liquibase-core', version: '4.27.0'
 	implementation group: 'net.lbruun.springboot', name: 'preliquibase-spring-boot-starter', version: '1.5.0'
 	runtimeOnly 'org.postgresql:postgresql'
-}
-
-tasks.named('test') {
-	useJUnitPlatform()
 }
